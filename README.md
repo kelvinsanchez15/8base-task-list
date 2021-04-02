@@ -38,6 +38,18 @@ REACT_APP_CLIENT_ID=<client_id>
 REACT_APP_CLIENT_DOMAIN=<client_domain>
 ```
 
+## Cloud Function Web Hook
+
+The tasks get marked as completed using a cloud function web hook deployed in a serverless environment by 8base, the function receives an `{id}` as a dynamic parameter in the URL and in the body it expects to receive a `completed` parameter set to a `boolean` value.
+
+## End-to-End (E2E) testing
+
+There are two End-to-End tests created with Cypress, you can run them with the following script:
+
+```sh
+$ npm run cy:run
+```
+
 ## Core dependencies
 
 - [React](https://reactjs.org/) - Javascript library for building user interfaces.

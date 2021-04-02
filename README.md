@@ -42,6 +42,8 @@ REACT_APP_CLIENT_DOMAIN=<client_domain>
 
 The tasks get marked as completed using a cloud function web hook deployed in a serverless environment by 8base, the function receives an `{id}` as a dynamic parameter in the URL and in the body it expects to receive a `completed` parameter set to a `boolean` value.
 
+This function can be triggered by an HTTP request to the generated endpoint with a `method` set to `PUT`.
+
 ## End-to-End (E2E) testing
 
 There are two End-to-End tests created with Cypress, you can run them with the following script:
